@@ -1,0 +1,8 @@
+/drfsite/db.sqlite3
+/drfvenv/
+.idea
+__pycache__/
+.DS_Store
+.AppleDouble
+.LSOverridew
+*.log
