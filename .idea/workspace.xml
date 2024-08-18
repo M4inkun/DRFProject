@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dad186db-57f9-4831-9d19-b9f5accc7502" name="Changes" comment="added create, update method in serializer and linked it with views">
+    <list default="true" id="dad186db-57f9-4831-9d19-b9f5accc7502" name="Changes" comment="changed view func">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drfsite/drfsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/drfsite/drfsite/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drfsite/women/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/drfsite/women/serializers.py" afterDir="false" />
@@ -46,14 +46,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.serializers.executor": "Run",
-    "Python.views.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.serializers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -102,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723817298794</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed view func">
+      <option name="closed" value="true" />
+      <created>1723986633156</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723986633156</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -110,6 +118,7 @@
     <MESSAGE value="tried get/post request without serializer" />
     <MESSAGE value="changed serializer and linked it with models" />
     <MESSAGE value="added create, update method in serializer and linked it with views" />
-    <option name="LAST_COMMIT_MESSAGE" value="added create, update method in serializer and linked it with views" />
+    <MESSAGE value="changed view func" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed view func" />
   </component>
 </project>
