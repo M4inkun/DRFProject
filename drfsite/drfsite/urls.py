@@ -20,8 +20,26 @@ from women.views import *
 from rest_framework import routers
 
 
-router = routers.SimpleRouter()
-router.register(r'women', WomenViewSet)
+class MyCustomRouter(routers.SimpleRouter):
+    routes = [
+        routers.Route(url=r'^{prefix}$',
+                      mapping={'get': 'list'},
+                      name='{basename}-list',
+                      detail=False,
+                      initkwargs={'suffix': 'list'}
+                      ),
+        routers.Route(url=r'^{prefix}/{lookup}$',
+                      mapping={'get': 'retrieve'},
+                      name='{basename}-detail',
+                      detail=True,
+                      initkwargs={'suffix': 'Detail'}
+                      )
+    ]
+
+
+router = MyCustomRouter()
+router.register(r'women', WomenViewSet, basename='women')
+print(router.urls)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,3 +48,5 @@ urlpatterns = [
     # path('api/v1/womenlist/<int:pk>/', WomenViewSet.as_view({'put': 'update'})),
     # path('api/v1/womendetail/<int:pk>/', WomenAPIDetailView.as_view()),
 ]
+
+
