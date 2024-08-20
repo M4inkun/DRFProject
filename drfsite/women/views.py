@@ -1,8 +1,9 @@
 from django.forms import model_to_dict
 from django.shortcuts import render
+from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action
 from rest_framework.generics import ListCreateAPIView, UpdateAPIView, RetrieveUpdateDestroyAPIView
-from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAdminUser
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
@@ -21,7 +22,8 @@ class WomenAPIList(ListCreateAPIView):
 class WomenAPIUpdate(RetrieveUpdateDestroyAPIView):
     queryset = Women.objects.all()
     serializer_class = WomenSerializer
-    permission_classes = (IsOwnerOrReadOnly, )
+    permission_classes = (IsAuthenticated, )  # IsOwnerOrReadOnly, )
+    # authentication_classes = (TokenAuthentication, )
 
 
 class WomenAPIDestroy(RetrieveUpdateDestroyAPIView):

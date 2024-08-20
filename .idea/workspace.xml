@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dad186db-57f9-4831-9d19-b9f5accc7502" name="Changes" comment="add variety routers simple/default/custom and action decorator">
-      <change afterPath="$PROJECT_DIR$/drfsite/women/permissions.py" afterDir="false" />
+    <list default="true" id="dad186db-57f9-4831-9d19-b9f5accc7502" name="Changes" comment="add authentication with cookie session">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drfsite/drfsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/drfsite/drfsite/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drfsite/drfsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/drfsite/drfsite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drfsite/women/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/drfsite/women/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drfsite/women/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/drfsite/women/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724070564232</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add permissions by standard classes">
+      <option name="closed" value="true" />
+      <created>1724149026882</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724149026882</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add authentication with cookie session">
+      <option name="closed" value="true" />
+      <created>1724149155618</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724149155618</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,6 +163,8 @@
     <MESSAGE value="add new view class inherited from RetrieveUpdateDestroyAPIView" />
     <MESSAGE value="add viewset" />
     <MESSAGE value="add variety routers simple/default/custom and action decorator" />
-    <option name="LAST_COMMIT_MESSAGE" value="add variety routers simple/default/custom and action decorator" />
+    <MESSAGE value="add permissions by standard classes" />
+    <MESSAGE value="add authentication with cookie session" />
+    <option name="LAST_COMMIT_MESSAGE" value="add authentication with cookie session" />
   </component>
 </project>
